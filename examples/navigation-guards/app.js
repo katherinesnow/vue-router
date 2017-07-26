@@ -8,12 +8,14 @@ const Foo = { template: '<div>foo</div>' }
 const Bar = { template: '<div>bar</div>' }
 
 /**
+ * 深入响应式原理
  * Signatre of all route guards:
  * @param {Route} to
  * @param {Route} from
  * @param {Function} next
  *
  * See http://router.vuejs.org/en/advanced/navigation-guards.html
+ * https://cn.vuejs.org/v2/guide/reactivity.html (中文文档说明)
  * for more details.
  */
 function guardRoute (to, from, next) {

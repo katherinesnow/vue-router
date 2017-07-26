@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-// A route component can also contain <router-view> to render
+// A route component can also contain <router-view> to render (嵌套路由)
 // nested children route components
 const Parent = {
   template: `

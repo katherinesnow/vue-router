@@ -29,9 +29,14 @@ export default {
     }
   },
   created () {
+    // 一般情况获取动态数据一般放在初始化created
+    // created 这个钩子在实例被创建之后被调用
     this.fetchData()
   },
   watch: {
+    // route 变化时，对应回调函数重新调用
+    // Vue 实例将会在实例化时调用 $watch()，遍历 watch 对象的每一个属性
+    // 注意，不应该使用箭头函数来定义 watcher 函数
     '$route': 'fetchData'
   },
   methods: {
